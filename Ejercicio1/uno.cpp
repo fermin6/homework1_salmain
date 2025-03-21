@@ -3,6 +3,8 @@
 
 using namespace std;
 
+// Funcion que crea una matriz de nxn
+
 int** crear_matriz(int n) {
     int** matriz = new int*[n];
     int valor = 1;
@@ -16,6 +18,7 @@ int** crear_matriz(int n) {
     return matriz;
 }
 
+// Funcion que libera la memoria de una matriz de nxn
 void liberar_matriz(int** matriz, int n) {
     for (int i = 0; i < n; i++) {
         delete[] matriz[i];
@@ -23,6 +26,7 @@ void liberar_matriz(int** matriz, int n) {
     delete[] matriz;
 }
 
+// Funcion que imprime una matriz de nxn en orden inverso
 void imprimir_matriz(int** matriz, int n) {
     int total_elem = n * n;
 
