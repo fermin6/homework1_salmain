@@ -3,16 +3,18 @@
 
 #include <string>
 
+using namespace std;
+
+// Declaración de los niveles de severidad
 const int DEBUG = 1;
 const int INFO = 2;
 const int WARNING = 3;
 const int ERROR = 4;
 const int CRITICAL = 5;
 
-void logMessage(std::string mensaje, int nivelSeveridad);
+// Declaración de las funciones
+void logMessage(string mensaje, int nivelSeveridad);
+void logMessage(string mensaje_de_error, string archivo, int linea);
+void logMessage(string mensaje_de_acceso, string usuario);
 
-void logMessage(std::string mensaje_de_error, std::string archivo, int linea);
-
-void logMessage(std::string mensaje_de_acceso, std::string usuario);
-
-#endif
+#endif 
