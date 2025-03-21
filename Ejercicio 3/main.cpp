@@ -1,11 +1,17 @@
+/* Este programa implementa una lista enlazada con nodos que unicamente 
+   contienen valor y una direccion de memoria*/
+
 #include "tres.h"
 #include <memory>
 #include <iostream>
 
-int main() {
-    std::shared_ptr<Node> head = nullptr; // Inicializa la cabeza de la lista
+using namespace std;
 
-    // Pruebas de funcionalidad
+//Test para comprobar el funcionamiento de la lista
+
+int main() {
+    shared_ptr<Node> head = nullptr; 
+
     push_front(head, 1);
     push_back(head, 3);
     push_back(head, 9);
